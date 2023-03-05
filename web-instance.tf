@@ -1,7 +1,7 @@
 resource "aws_instance" "my-ec2"{
     ami=var.ec2-ami
     instance_type=var.instance_type
-     security_groups =[aws_security_group.ec2-sg.name]
+     vpc_security_group_ids =[aws_security_group.ec2-sg.id]
      subnet_id      = aws_subnet.public_subnet.id
      tags = {
        Name = var.ec2-tag

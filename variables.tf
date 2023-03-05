@@ -104,6 +104,18 @@ variable "ec2-sg-tag"{
     type= string 
     }
 
+variable "db-user-name"{
+    description= " rds db name" 
+    type= string 
+
+    }
+
+variable "db-password"{
+    description= " rds db password" 
+    type= string 
+
+    }
+
 
 
 
@@ -122,4 +134,5 @@ variable "prefix" {
     
    }
 }
+
 
